@@ -1,0 +1,50 @@
+<h1>Votre candidature</h1>
+<p>Merci de renseigner tous les champs suivant avant d'envoyer votre candidature.</p>
+<hr>
+<form>
+  <div class="form-group required">
+    <label for="irlDescription">Présentation IRL</label>
+    <textarea class="form-control" id="irlDescription" rows="3" placeholder="Kévin, 25ans, Danseur étoile" required>{{apply.irlDescription}}</textarea>
+  </div>
+  <div class="form-group required">
+    <label for="battleTag">BattleTag</label>
+    <input type="text" class="form-control" id="battleTag" placeholder="SuperKeke#1234" required>{{apply.battleTag}}
+  </div>
+  <div class="form-group required">
+    <label for="igDescription">Présentation IG</label>
+    <textarea class="form-control" id="igDescription" rows="3" placeholder="Thorbiorn, Druide tank. 80pts dans mon artefact, etc."
+      required>{{apply.igDescription}}</textarea>
+  </div>
+  <div class="form-group required">
+    <label for="armory">Lien vers l'armurerie</label>
+    <input type="text" class="form-control" id="armory" placeholder="https://worldofwarcraft.com/fr-fr/character/elune/Keke"
+      required>{{apply.armory}}
+  </div>
+  <div class="form-group required">
+    <label for="warcraftLogs">Lien vers WarcraftLogs</label>
+    <input type="text" class="form-control" id="warcraftLogs" placeholder="https://www.warcraftlogs.com/character/eu/elune/Keke"
+      required>{{apply.warcraftLogs}}
+  </div>
+  <div class="form-group required">
+    <label for="pastGuilds">Expériences précédentes</label>
+    <textarea class="form-control" id="pastGuilds" rows="3" placeholder="Racontez nous votre parcours, vos précédentes expériences et les raisons de vos éventuels départs."
+      required>{{apply.pastGuilds}}</textarea>
+  </div>
+  <div class="form-group required">
+    <label for="whyJoinUs">Pourquoi Famous ?</label>
+    <textarea class="form-control" id="whyJoinUs" rows="3" placeholder="Parce que vous êtes trop beaux..." required>{{apply.whyJoinUs}}</textarea>
+  </div>
+  <div class="form-group required">
+    <label for="availability">Vos disponibilités</label>
+    <textarea class="form-control" id="availability" rows="3" placeholder="Nous raidons 4 soirs par semaine (Me-Je-Di-Lu) de 20h30 à 00h.&#13;&#10;Nous demandons 3 soirs de présence minimum.&#13;&#10;Dites nous ici quand vous pouvez raid et si vous avez des contraintes."
+      required>{{apply.availability}}</textarea>
+  </div>
+  <div class="form-group required">
+    <label for="comments">Le mot de la fin</label>
+    <textarea class="form-control" id="comments" rows="3" placeholder="Si vous voulez ajouter quelque chose, n'hésitez pas !"
+      required>{{apply.comments}}</textarea>
+  </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-success">C'est parti, je postule !</button>
+  </div>
+</form>

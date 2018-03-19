@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "guildRank": 1,
+        "role": 3,
+        "name": "Yumî",
+        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
+        "armory": "xxx",
+        "warcraftlogs": "yyy",
+        "raiderio": "zzz"
+    },
+    {
+        "id": 2,
+        "guildRank": 1,
+        "role": 2,
+        "name": "Xhyn",
+        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
+        "armory": "xxx",
+        "warcraftlogs": "yyy",
+        "raiderio": "zzz"
+    },
+    {
+        "id": 3,
+        "guildRank": 2,
+        "role": 1,
+        "name": "Thorbiorn",
+        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
+        "armory": "xxx",
+        "warcraftlogs": "yyy",
+        "raiderio": "zzz"
+    },
+    {
+        "id": 4,
+        "guildRank": 3,
+        "role": 4,
+        "name": "Jezza",
+        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
+        "armory": "xxx",
+        "warcraftlogs": "yyy",
+        "raiderio": "zzz"
+    }
+]

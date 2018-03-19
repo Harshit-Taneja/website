@@ -1,0 +1,66 @@
+<div>
+  <div class="float-left">
+    <h1>Roster</h1>
+  </div>
+  <div class="float-right">
+    <div class="btn-group btn-group-toggle">
+      <label class="btn btn-secondary" [class.active]="displayMode === 'guildRank'">
+        <input type="radio" name="options" id="option1" autocomplete="off"
+        (click)="displayMode = 'guildRank'"> Rang
+      </label>
+      <label class="btn btn-secondary" [class.active]="displayMode === 'role'">
+        <input type="radio" name="options" id="option2" autocomplete="off"
+        (click)="displayMode = 'role'"> Rôle
+      </label>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+<div *ngIf="displayMode === 'guildRank'">
+  <h2>Officiers</h2>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of officers">
+      <famous-raider [raider]="raider"></famous-raider>
+    </div>
+  </div>
+  <h2>Membres</h2>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of members">
+      <famous-raider [raider]="raider"></famous-raider>
+    </div>
+  </div>
+  <h2>Applys</h2>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of applys">
+      <famous-raider [raider]="raider"></famous-raider>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="displayMode === 'role'">
+    <h2>Tanks</h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of tanks">
+        <famous-raider [raider]="raider"></famous-raider>
+      </div>
+    </div>
+    <h2>Heals</h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of heals">
+        <famous-raider [raider]="raider"></famous-raider>
+      </div>
+    </div>
+    <h2>Melees</h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of melees">
+        <famous-raider [raider]="raider"></famous-raider>
+      </div>
+    </div>
+    <h2>Ranges</h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let raider of ranges">
+        <famous-raider [raider]="raider"></famous-raider>
+      </div>
+    </div>
+  </div>
