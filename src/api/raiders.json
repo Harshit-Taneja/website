@@ -2,41 +2,261 @@
     {
         "id": 1,
         "guildRank": 1,
-        "role": 3,
-        "name": "Yumî",
-        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
-        "armory": "xxx",
-        "warcraftlogs": "yyy",
-        "raiderio": "zzz"
-    },
-    {
-        "id": 2,
-        "guildRank": 1,
         "role": 2,
         "name": "Xhyn",
-        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
-        "armory": "xxx",
-        "warcraftlogs": "yyy",
-        "raiderio": "zzz"
+        "classId": 2,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/xhyn",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/xhyn",
+        "raiderio": "https://raider.io/characters/eu/elune/Xhyn"
     },
-    {
+	{
+        "id": 2,
+        "guildRank": 1,
+        "role": 3,
+        "name": "Yumî",
+        "classId": 12,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/yumî",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/yumî",
+        "raiderio": "https://raider.io/characters/eu/elune/Yumî"
+    },
+	{
         "id": 3,
+        "guildRank": 1,
+        "role": 2,
+        "name": "Kaëlie",
+        "classId": 11,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/kaëlie",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/kaëlie",
+        "raiderio": "https://raider.io/characters/eu/elune/Kaëlie"
+    },
+	{
+        "id": 4,
+        "guildRank": 1,
+        "role": 4,
+        "name": "Yunica",
+        "classId": 7,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/yunica",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/yunica",
+        "raiderio": "https://raider.io/characters/eu/elune/Yunica"
+    },
+	{
+        "id": 5,
         "guildRank": 2,
         "role": 1,
-        "name": "Thorbiorn",
-        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
-        "armory": "xxx",
-        "warcraftlogs": "yyy",
-        "raiderio": "zzz"
+        "name": "Nitsou",
+        "classId": 11,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/nitsou",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/nitsou",
+        "raiderio": "https://raider.io/characters/eu/elune/Nitsou"
     },
-    {
-        "id": 4,
-        "guildRank": 3,
+	{
+        "id": 6,
+        "guildRank": 2,
+        "role": 4,
+        "name": "Kaîri",
+        "classId": 11,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/kaîri",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/kaîri",
+        "raiderio": "https://raider.io/characters/eu/elune/Kaîri"
+    },
+	{
+        "id": 7,
+        "guildRank": 2,
+        "role": 1,
+        "name": "Thorbiörn",
+        "classId": 11,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/thorbiörn",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/thorbiörn",
+        "raiderio": "https://raider.io/characters/eu/elune/Thorbiörn"
+    },
+	{
+        "id": 8,
+        "guildRank": 2,
+        "role": 4,
+        "name": "Phatrengar",
+        "classId": 8,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/phatrengar",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/phatrengar",
+        "raiderio": "https://raider.io/characters/eu/elune/Phatrengar"
+    },
+	{
+        "id": 9,
+        "guildRank": 2,
         "role": 4,
         "name": "Jezza",
-        "description": "Blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
-        "armory": "xxx",
-        "warcraftlogs": "yyy",
-        "raiderio": "zzz"
+        "classId": 3,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/jezza",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/jezza",
+        "raiderio": "https://raider.io/characters/eu/elune/Jezza"
+    },
+	{
+        "id": 10,
+        "guildRank": 2,
+        "role": 3,
+        "name": "Matsûda",
+        "classId": 12,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/matsûda",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/matsûda",
+        "raiderio": "https://raider.io/characters/eu/elune/Matsûda"
+    },
+	{
+        "id": 11,
+        "guildRank": 2,
+        "role": 3,
+        "name": "Endbless",
+        "classId": 4,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/endbless",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/endbless",
+        "raiderio": "https://raider.io/characters/eu/elune/Endbless"
+    },
+	{
+        "id": 12,
+        "guildRank": 2,
+        "role": 3,
+        "name": "Ayaney",
+        "classId": 4,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/ayaney",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/ayaney",
+        "raiderio": "https://raider.io/characters/eu/elune/Ayaney"
+    },
+	{
+        "id": 13,
+        "guildRank": 2,
+        "role": 4,
+        "name": "Cptainbanana",
+        "classId": 3,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/cptainbanana",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/cptainbanana",
+        "raiderio": "https://raider.io/characters/eu/elune/Cptainbanana"
+    },
+	{
+        "id": 14,
+        "guildRank": 2,
+        "role": 4,
+        "name": "Vícky",
+        "classId": 8,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/vícky",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/vícky",
+        "raiderio": "https://raider.io/characters/eu/elune/Vícky"
+    },
+	{
+        "id": 15,
+        "guildRank": 2,
+        "role": 3,
+        "name": "Monstert",
+        "classId": 1,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/monstert",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/monstert",
+        "raiderio": "https://raider.io/characters/eu/elune/Monstert"
+    },
+	{
+        "id": 16,
+        "guildRank": 2,
+        "role": 2,
+        "name": "Choucròute",
+        "classId": 5,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/choucròute",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/choucròute",
+        "raiderio": "https://raider.io/characters/eu/elune/Choucròute"
+    },
+	{
+        "id": 17,
+        "guildRank": 2,
+        "role": 3,
+        "name": "Nooboody",
+        "classId": 1,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/nooboody",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/nooboody",
+        "raiderio": "https://raider.io/characters/eu/elune/Nooboody"
+    },
+	{
+        "id": 18,
+        "guildRank": 2,
+        "role": 2,
+        "name": "Vecto",
+        "classId": 7,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/vecto",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/vecto",
+        "raiderio": "https://raider.io/characters/eu/elune/Vecto"
+    },
+	{
+        "id": 19,
+        "guildRank": 2,
+        "role": 4,
+        "name": "Douned",
+        "classId": 9,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/douned",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/douned",
+        "raiderio": "https://raider.io/characters/eu/elune/Douned"
+    },
+	{
+        "id": 20,
+        "guildRank": 2,
+        "role": 3,
+        "name": "Odalie",
+        "classId": 10,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/odalie",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/odalie",
+        "raiderio": "https://raider.io/characters/eu/elune/Odalie"
+    },
+	{
+        "id": 21,
+        "guildRank": 2,
+        "role": 4,
+        "name": "Alyngwën",
+        "classId": 5,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/alyngwën",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/alyngwën",
+        "raiderio": "https://raider.io/characters/eu/elune/Alyngwën"
+    },
+	{
+        "id": 22,
+        "guildRank": 3,
+        "role": 2,
+        "name": "Bashful",
+        "classId": 2,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/bashful",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/bashful",
+        "raiderio": "https://raider.io/characters/eu/elune/Bashful"
+    },
+	{
+        "id": 23,
+        "guildRank": 3,
+        "role": 4,
+        "name": "Swoopeh",
+        "classId": 8,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/swoopeh",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/swoopeh",
+        "raiderio": "https://raider.io/characters/eu/elune/Swoopeh"
+    },
+	{
+        "id": 24,
+        "guildRank": 3,
+        "role": 4,
+        "name": "Awarlock",
+        "classId": 9,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/awarlock",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/awarlock",
+        "raiderio": "https://raider.io/characters/eu/elune/Awarlock"
+    },
+	{
+        "id": 25,
+        "guildRank": 3,
+        "role": 4,
+        "name": "Platiineqt",
+        "classId": 5,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/platiineqt",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/platiineqt",
+        "raiderio": "https://raider.io/characters/eu/elune/Platiineqt"
+    },
+	{
+        "id": 26,
+        "guildRank": 3,
+        "role": 4,
+        "name": "Tytanyah",
+        "classId": 3,
+        "armory": "https://worldofwarcraft.com/fr-fr/character/elune/tytanyah",
+        "warcraftlogs": "https://www.warcraftlogs.com/character/eu/elune/tytanyah",
+        "raiderio": "https://raider.io/characters/eu/elune/Tytanyah"
     }
 ]

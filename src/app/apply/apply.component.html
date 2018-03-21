@@ -1,50 +1,96 @@
-<h1>Votre candidature</h1>
+<div *ngIf="success" class="alert alert-success fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4 class="alert-heading">Félicitations, votre candidature a été envoyée !</h4>
+  <h6>Nous vous recontacterons bientôt. Bonne chance pour votre apply :)</h6>
+</div>
+<div *ngIf="error" class="alert alert-danger fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4 class="alert-heading">Erreur !</h4>
+  <h6>Malheureusement un problème a eu lieu pendant l'envoi de votre candidature... Veuillez réessayer dans quelques minutes
+    et si ça ne fonctionne toujours pas, merci de contacter un officier directement.</h6>
+</div>
+<h1>VOTRE CANDIDATURE</h1>
 <p>Merci de renseigner tous les champs suivant avant d'envoyer votre candidature.</p>
 <hr>
-<form>
+<form #applyForm="ngForm" novalidate>
   <div class="form-group required">
     <label for="irlDescription">Présentation IRL</label>
-    <textarea class="form-control" id="irlDescription" rows="3" placeholder="Kévin, 25ans, Danseur étoile" required>{{apply.irlDescription}}</textarea>
+    <textarea #irlDescription="ngModel" [(ngModel)]="apply.irlDescription" name="irlDescription" class="form-control" id="irlDescription"
+      rows="3" placeholder="Kévin, 25ans, Danseur étoile" required></textarea>
   </div>
   <div class="form-group required">
     <label for="battleTag">BattleTag</label>
-    <input type="text" class="form-control" id="battleTag" placeholder="SuperKeke#1234" required>{{apply.battleTag}}
+    <input #battleTag="ngModel" [(ngModel)]="apply.battleTag" name="battleTag" type="text" class="form-control" id="battleTag"
+      placeholder="SuperKeke#1234" required>
   </div>
   <div class="form-group required">
     <label for="igDescription">Présentation IG</label>
-    <textarea class="form-control" id="igDescription" rows="3" placeholder="Thorbiorn, Druide tank. 80pts dans mon artefact, etc."
-      required>{{apply.igDescription}}</textarea>
+    <textarea #igDescription="ngModel" [(ngModel)]="apply.igDescription" name="igDescription" class="form-control" id="igDescription"
+      rows="3" placeholder="Keke, Druide tank. 80pts dans mon artefact, etc." required></textarea>
   </div>
   <div class="form-group required">
     <label for="armory">Lien vers l'armurerie</label>
-    <input type="text" class="form-control" id="armory" placeholder="https://worldofwarcraft.com/fr-fr/character/elune/Keke"
-      required>{{apply.armory}}
+    <input #armory="ngModel" [(ngModel)]="apply.armory" name="armory" type="text" class="form-control" id="armory" placeholder="https://worldofwarcraft.com/fr-fr/character/ysondre/Keke"
+      required>
   </div>
   <div class="form-group required">
     <label for="warcraftLogs">Lien vers WarcraftLogs</label>
-    <input type="text" class="form-control" id="warcraftLogs" placeholder="https://www.warcraftlogs.com/character/eu/elune/Keke"
-      required>{{apply.warcraftLogs}}
+    <input #warcraftLogs="ngModel" [(ngModel)]="apply.warcraftLogs" name="warcraftLogs" type="text" class="form-control" id="warcraftLogs"
+      placeholder="https://www.warcraftlogs.com/character/eu/ysondre/Keke" required>
+  </div>
+  <div class="form-group required">
+    <label for="screenshot">Screenshot de l'interface</label>
+    <input #screenshot="ngModel" [(ngModel)]="apply.screenshot" name="screenshot" type="text" class="form-control" id="screenshot"
+      placeholder="Vous pouvez l'upload sur https://imgur.com" required>
   </div>
   <div class="form-group required">
     <label for="pastGuilds">Expériences précédentes</label>
-    <textarea class="form-control" id="pastGuilds" rows="3" placeholder="Racontez nous votre parcours, vos précédentes expériences et les raisons de vos éventuels départs."
-      required>{{apply.pastGuilds}}</textarea>
+    <textarea #pastGuilds="ngModel" [(ngModel)]="apply.pastGuilds" name="pastGuilds" class="form-control" id="pastGuilds" rows="3"
+      placeholder="Racontez nous votre parcours, vos précédentes expériences et les raisons de vos éventuels départs." required></textarea>
   </div>
   <div class="form-group required">
     <label for="whyJoinUs">Pourquoi Famous ?</label>
-    <textarea class="form-control" id="whyJoinUs" rows="3" placeholder="Parce que vous êtes trop beaux..." required>{{apply.whyJoinUs}}</textarea>
+    <textarea #whyJoinUs="ngModel" [(ngModel)]="apply.whyJoinUs" name="whyJoinUs" class="form-control" id="whyJoinUs" rows="3"
+      placeholder="Parce que vous êtes trop beaux..." required></textarea>
   </div>
   <div class="form-group required">
     <label for="availability">Vos disponibilités</label>
-    <textarea class="form-control" id="availability" rows="3" placeholder="Nous raidons 4 soirs par semaine (Me-Je-Di-Lu) de 20h30 à 00h.&#13;&#10;Nous demandons 3 soirs de présence minimum.&#13;&#10;Dites nous ici quand vous pouvez raid et si vous avez des contraintes."
-      required>{{apply.availability}}</textarea>
+    <textarea #availability="ngModel" [(ngModel)]="apply.availability" name="availability" class="form-control" id="availability"
+      rows="3" placeholder="Nous raidons 4 soirs par semaine (Me-Je-Di-Lu) de 20h30 à 00h.&#13;&#10;Nous demandons 3 soirs de présence minimum.&#13;&#10;Dites nous ici quand vous pouvez raid et si vous avez des contraintes."
+      required></textarea>
   </div>
   <div class="form-group required">
     <label for="comments">Le mot de la fin</label>
-    <textarea class="form-control" id="comments" rows="3" placeholder="Si vous voulez ajouter quelque chose, n'hésitez pas !"
-      required>{{apply.comments}}</textarea>
+    <textarea #comments="ngModel" [(ngModel)]="apply.comments" name="comments" class="form-control" id="comments" rows="3" placeholder="Petit mot pour conclure votre apply"
+      required></textarea>
   </div>
   <div class="text-center">
-    <button type="submit" class="btn btn-success">C'est parti, je postule !</button>
+    <button title="{{applyForm.invalid ? 'Veuillez remplir tous les champs svp' : ''}}" type="submit" class="btn btn-success"
+      [disabled]="applyForm.invalid" data-toggle="modal" data-target="#confirmApplyModal">C'est parti, je postule !</button>
+    <p *ngIf="applyForm.invalid"><i>Veuillez remplir tous les champs svp</i></p>
   </div>
 </form>
+<div class="modal" tabindex="-1" role="dialog" id="confirmApplyModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color: black;text-align: justify;text-justify: inter-word;">Attention, une fois envoyée vous ne pourrez plus faire de modifications. Votre candidature est-elle vraiment terminée
+          ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" (click)="submitApply()">Oui, j'envoie ma candidature !</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Non, je vais me relire</button>
+      </div>
+    </div>
+  </div>
+</div>

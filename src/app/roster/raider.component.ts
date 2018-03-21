@@ -9,6 +9,7 @@ import { IRaider } from './raider';
 })
 export class RaiderComponent implements OnInit {
   @Input() raider: IRaider;
+  @Input() displayMode: string;
 
   constructor(private _raiderService: RaiderService) { }
 

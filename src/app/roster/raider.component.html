@@ -1,11 +1,14 @@
-<div class="card">
+<div class="card" [style.border-color]="raider.classId | classInfo: 'color'" style="margin-bottom: 10px">
   <div class="card-body">
-    <h5 class="card-title">{{raider.name}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{raider.role | role}}</h6>    
+    <h5 class="card-title">{{raider.name}} <span class="badge" 
+      [style.background-color]="raider.classId | classInfo: 'color'">{{raider.classId | classInfo: 'name'}}</span></h5>
+    <h6 *ngIf="displayMode === 'guildRank'" class="card-subtitle mb-2 text-muted">{{raider.role | role}}</h6>    
+    <h6 *ngIf="displayMode === 'role'" class="card-subtitle mb-2 text-muted">{{raider.guildRank | guildRank}}</h6>    
   </div>
-  <div class="card-footer text-muted text-center">
-      <a href="#" class="card-link"><img title="Lien WoW Armurerie" src="assets\img\wow-icon-32.png"></a>
-      <a href="#" class="card-link"><img title="Lien Warcraft Logs" src="assets\img\warcraftlogs-icon-32.png"></a>
-      <a href="#" class="card-link"><img title="Lien Raider.io" src="assets\img\raiderio-icon-32.png"></a>
+  <div class="card-footer text-muted text-center" [style.background-color]="raider.classId | classInfo: 'color'"
+  style="filter: brightness(75%)">
+      <a target="_blank" href="{{raider.armory}}" class="card-link"><img title="Lien WoW Armurerie" src="assets\img\wow-icon-32.png"></a>
+      <a target="_blank" href="{{raider.warcraftlogs}}" class="card-link"><img title="Lien Warcraft Logs" src="assets\img\warcraftlogs-icon-32.png"></a>
+      <a target="_blank" href="{{raider.raiderio}}" class="card-link"><img title="Lien Raider.io" src="assets\img\raiderio-icon-32.png"></a>
     </div>
 </div>

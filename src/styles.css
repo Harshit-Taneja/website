@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-image: url("assets/img/background-large-75.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: scroll;
+}

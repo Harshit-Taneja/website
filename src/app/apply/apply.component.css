@@ -2,3 +2,6 @@
     content:"*";
     color:red;
 }
+H1, p, label {
+    color: lightgray;
+}
